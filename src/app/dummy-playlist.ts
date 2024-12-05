@@ -2,7 +2,7 @@ export const DUMMY_PLAYLIST = [
   {
     id: '1',
     name: 'Top Hits 2024',
-    image: '../assets/images/playlist/1p.jpg',
+    image: 'assets/images/playlist/1p.jpg',
     description: 'Le canzoni più ascoltate del momento',
   },
   {
