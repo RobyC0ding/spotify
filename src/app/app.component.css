@@ -1,0 +1,126 @@
+/* Layout */
+.container {
+  display: flex;
+  height: 100vh; /* Occupa tutta la pagina */
+  gap: 5px; /* Distanza tra le due colonne */
+  padding: 20px; /* Distanza dai bordi dello schermo (superiore, inferiore, laterali) */
+  box-sizing: border-box; /* Per considerare il padding nei calcoli delle dimensioni */
+}
+
+/* Colonna sinistra: Playlist */
+.playlist-sidebar {
+  width: 20%;
+  background-color: #111111;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Allineamento in alto */
+  border-radius: 10px; /* Bordo stondato per la colonna delle playlist */
+  margin-right: 10px; /* Spazio tra playlist e canzoni */
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.6); /* Aggiungi ombra leggera */
+}
+
+/* Box per le Playlist */
+.playlist-box {
+  background-color: #111111;
+  padding: 20px;
+  border-radius: 10px; /* Bordo stondato per la box delle playlist */
+  flex-grow: 1; /* Consente alla box di crescere e riempire lo spazio disponibile */
+  box-sizing: border-box; /* Per includere il padding nei calcoli */
+}
+
+.playlist-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.playlist-sidebar li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.playlist-sidebar li img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.playlist-sidebar li:hover {
+  background-color: #000000;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Colonna centrale: Canzoni */
+.song-list {
+  width: 80%;
+  padding: 20px;
+  background-color: #111111;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Allinea il contenuto in alto */
+  border-radius: 10px; /* Bordo stondato per la colonna delle canzoni */
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.6); /* Aggiungi ombra leggera */
+}
+
+/* Box per le Canzoni */
+.song-box {
+  background-color: #111111;
+  padding: 20px;
+  border-radius: 10px; /* Bordo stondato per la box delle canzoni */
+  flex-grow: 1; /* Consente alla box di crescere e riempire lo spazio disponibile */
+  box-sizing: border-box; /* Per includere il padding nei calcoli */
+}
+
+.song-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.song-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.song-list li img {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+.song-list li:hover {
+  background-color: #333;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Separatore tra le canzoni */
+.song-separator {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 10px 0;
+}
+
+/* Stili per il titolo delle canzoni e degli artisti */
+.song-info {
+  display: flex;
+  flex-direction: column; /* Disposizione verticale per il titolo e l'artista */
+  justify-content: center;
+}
+
+.song-info h3 {
+  margin: 0;
+}
+
+.artist-name {
+  font-size: 14px;
+  color: #aaa; /* Colore per il nome dell'artista */
+  margin-top: 5px; /* Distanza tra il titolo e l'artista */
+}
